@@ -1,0 +1,391 @@
+* {
+    margin: 0;padding: 0;
+}
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Urbanist', monospace;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 18px;
+    line-height: 35px;
+}
+p {
+    font-size: 14px;
+}
+a {
+    font-size: 12px;
+}
+button {
+    text-transform: capitalize;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    transition: .5s;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.header h6 {
+    font-size: 14px;
+}
+.header a {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 1px gray;
+}
+.nav {
+    display: none;
+    
+}
+.navbar .nav button {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: grey;
+    background: none;
+}
+.navget {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    animation: pop .5s ease-in-out forwards;
+    display: flex;
+    z-index: 5;
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding: 10% 1%;
+    background-color: #ffffffe8;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    box-shadow: -1px 0px 10px #424242c0;
+}
+@keyframes pop {
+    from {
+        opacity: 0;
+        filter: blur(30px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+.navbar .nav ul {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar .nav ul a {
+    padding: 15px 10px;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.navbar .nav ul a:hover {
+    background-color: rgba(195, 196, 195, 0.716);
+    cursor: pointer;
+}
+.navbar .navicons {
+    color: grey;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navicons div {
+    align-items: center;
+    margin-top: 10px;
+}
+.navbar .navicons input{
+    display: none;
+}
+.navbar input{
+    align-self: center;
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    background-color: rgb(216, 215, 215);
+    border: 1px solid rgb(114, 114, 114);
+    padding: 5px;
+}
+.navbar .navicons button {
+    padding: 0;
+    background: none;
+}
+.navbar .navicons button div {
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: grey;
+}
+
+/* Cart */
+.cart  {
+    /* width: 80%; */
+    padding: 20px 50px;
+}
+.cart table {
+    width: 97%;
+    /* text-align: left; */
+}
+.cart table tr {
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px;
+    box-shadow: 0 0 3px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+}
+.cart table tr th {
+    width: 25%;
+    text-align: left;
+}
+.cart table tr td {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.cart table tr td img {
+    width: 40px;
+}
+.cart table tr td h4 {
+    font-size: 18px;
+}
+.cart table tr td input {
+    width: 50px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+}
+.cart table tr td input button{
+    background: none;
+}
+hr {
+    width: 20px;
+    margin: 10px 50%;
+}
+.txt {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.other {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.other div:first-child {
+    width: 50%;
+}
+.other input {
+    width: 35%;
+    padding: 10px;
+    font-size: 15px;
+}
+.other .form {
+    width: 25%;
+    box-shadow: 0 0 2px #000;
+    padding: 15px;
+}
+.other .form h5 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 25px;
+}
+.other .form table{
+    width: 100%;
+}
+.other .form table tr {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+.other .form table tr:last-child {
+    border: none;
+}
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 6%;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: capitalize;
+    width: 100%;
+}
+.footer div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 15px;
+}
+.footer hr {
+    margin: 15px 0;
+}
+
+.footer div input {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+.footer h5, h4 {
+    line-height: 50px;
+    font-size: 20px;
+}
+.footer p, a {
+    font-size: 14px;
+    margin: 6px 0;
+    color: white;
+    text-decoration: none;
+
+}
+.footnote {
+    padding: 10px;
+    text-align: center;
+    color: grey;
+    border-top: 1px solid grey;
+}
+
+@media only screen and (min-width: 700px) {
+    h3 {
+        font-size: 23px;
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    a {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 2% 5%;
+    }
+    .navbar .nav {
+        margin: 0;
+        padding: 0;
+        height: max-content;
+        position: relative;
+        background: none;
+        box-shadow: none;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .nav ul li {
+        width: max-content;
+        margin: 0;
+        margin-left: 15px;
+        padding: 4px 6px;
+        border: 1px solid grey;
+        border-color: transparent;
+    }
+    .navbar .nav ul li:hover {
+        background: none;
+        border: 1px solid grey;
+        border-color: transparent transparent #5c5757 transparent;
+        border-width: 90%;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+    .navbar .nav ul a:hover {
+        background: none;
+        cursor: pointer;
+    }
+    .navbar .nav ul .category {
+        display: none;
+    }
+    .navbar .nav input{
+        display: none;
+    }
+    .navicons {
+        margin: 0;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .navbar .navicons input{
+        display: block;
+        width: 220px;
+        height: 30px;
+        border-radius: 0;
+        border: none;
+        background-color: rgb(216, 215, 215);
+        padding: 5px;
+    }
+    .nav button {
+        display: none;
+    }
+    .navicons button {
+        display: none;
+    }
+     /* footer */
+     .footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .footer hr {
+        display: none;
+    }
+    .footer p, a {
+        font-size: 14px;
+        color: #fff;
+    }
+    .footer div {
+        width: auto;
+    }
+}

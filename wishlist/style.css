@@ -156,8 +156,7 @@ button:hover {
     background-color: grey;
 }
 .subdivs {
-    /* width: 100%; */
-    padding: 15px 50px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -272,7 +271,8 @@ button:hover {
     display: none;
 }
 .txt {
-    padding: 10px 50px;
+    padding: 20px;
+    /* padding: 10px 50px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,6 +285,10 @@ button:hover {
     box-shadow: 0 0 2px grey;
     padding: 10px 25px;
     font-size: 12px;
+}
+.light-btn:hover {
+    background-color: rgb(211, 210, 210);
+    transition: .5s ease-in-out;
 }
 header {
     position: relative;

@@ -107,14 +107,25 @@ a {
     list-style-type: none;
     text-align: center;
 } */
-.navbar .nav ul a {
+.navbar .nav ul li {
+    width: 100%;
+}
+.navbar .nav ul li a{
+    display: inline-block;
+    font-size: 16px;
     padding: 15px 10px;
     width: 90%;
     text-decoration: none;
     color: black;
-    font-size: 16px;
 }
-.navbar .nav ul a:hover {
+/* .navbar .nav ul li a {
+    font-size: 18px;
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+} */
+.navbar .nav ul li a:hover {
     background-color: rgba(195, 196, 195, 0.716);
     cursor: pointer;
 }
@@ -128,7 +139,8 @@ a {
 }
 .navbar .nav ul .category li p {
     position: absolute;
-    left: 0;
+    left: 3%;
+    top: 35%;
 }
 .navbar .nav ul .category {
     position: relative;
@@ -136,43 +148,43 @@ a {
     width: 100%;
 }
 .navbar .nav ul .category ul {
+    height: 300px;
+    overflow: scroll;
     position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
+    display: block;
     text-transform: capitalize;
     background-color: #ffffffee;
     backdrop-filter: blur(20px);
-    right: 100%;
-    width: 100%;
-    top: -25px;
+    right: 98%;
+    width: max-content;
+    top: -15px;
     box-shadow: -1px 1px 2px #424242c0;
     z-index: 5;
     display: none;
 }
-.navbar .nav ul .category ul li {
-    padding: 8px 15px;
+.navbar .nav ul .category ul li{
+    width: 100%;
+}
+.navbar .nav ul .category ul li a {
+    margin: 0;
+    padding: 20px 50px;
+    width: 100%;
     font-size: 14px;
     align-items: center;
     justify-content: flex-start;
 }
-.navbar .nav ul .category ul li p{
-    left: 2%;
-}
 .navbar .nav ul .category:hover .dropdown {
-    display: flex;
+    display:  block;
 }
-.navbar .nav ul li:hover {
+/* .navbar .nav ul a:hover {
     background-color: rgba(195, 196, 195, 0.716);
     cursor: pointer;
-}
+} */
 .navbar .navicons {
+    font-size: 18px;
     color: #000;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -181,12 +193,51 @@ a {
     color: #000;
     font-size: 16px;
 }
-.navbar .navicons div {
+.navbar .navicons .icons {
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
 .navbar .navicons input{
     display: none;
+}
+.navbar .navicons .icons div {
+    margin: 0 5px;
+}
+.navbar .navicons .user {
+    cursor: pointer;
+}
+.navbar .navicons .user-dropdown {
+    text-transform: capitalize;
+    width: 30%;
+    right: 5%;
+    top: 14.5%;
+    position: absolute;
+    display: none;
+    z-index: 5;
+    background-color: #ffffff93;
+    backdrop-filter: blur(33px);
+    border-radius: 5px;
+}
+.navbar .navicons .user-dropdown ul li {
+    
+    list-style-type: none;
+    font-size: 15px;
+    padding: 15px 25px;
+    /* margin: 8px 0; */
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .navicons .user-dropdown ul li:hover {
+    cursor: pointer;
+    background-color: #ffffff5e;
+}
+
+.navbar .navicons .icons div:hover .user-dropdown {
+    display: block;
 }
 .navbar input{
     align-self: center;

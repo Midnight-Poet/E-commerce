@@ -216,6 +216,7 @@ a {
     border-radius: 5px;
 }
 .navbar .navicons .user-dropdown ul li {
+    
     list-style-type: none;
     font-size: 15px;
     padding: 15px 25px;
@@ -262,6 +263,7 @@ a {
 }
 .imgs img {
     width: 100%;
+
 }
 
 /* Side Section */
@@ -852,6 +854,11 @@ footer {
     .navicons button {
         display: none;
     }
+    .navbar .navicons .user-dropdown {
+        width: 15%;
+        top: 18%;
+        /* display: block; */
+    }
     .first {
         display: flex;
         justify-content: space-between;
@@ -886,7 +893,7 @@ footer {
         cursor: pointer;
     }
     .imgs {
-        padding: 2% 6%;
+        padding: 1% 7%;
     }
     .imgs img {
         width: 100%;

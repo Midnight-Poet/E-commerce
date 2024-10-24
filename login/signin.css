@@ -22,11 +22,15 @@ p {
 a {
     font-size: 12px;
 }
+input:focus {
+    outline: none;
+}
 button {
     text-transform: capitalize;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     cursor: pointer;
+    margin: 0;
 }
 button:hover {
     transition: .5s;
@@ -53,7 +57,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    box-shadow: 0px 0px 1px gray;
+    box-shadow: 0px 0px 2px gray;
 }
 .nav {
     display: none;
@@ -124,10 +128,11 @@ button:hover {
 .navbar .navicons a {
     margin: 0 4px;
     color: #000;
+    font-size: 16px;
 }
 .navbar .navicons div {
     align-items: center;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 .navbar .navicons input{
     display: none;
@@ -154,147 +159,73 @@ button:hover {
     margin-top: 5px;
     background-color: grey;
 }
-/* Text */
-.text {
-    text-transform: capitalize;
-    padding: 1% 5%;
+/* Section */
+section {
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
-}
-.text div {
-    width: 100%;
-}
-.text div img {
-    width: 100%;
-}
-.text .txt h2 {
-    font-size: 40px;
-    margin: 15px 0;
-}
-.text .txt p {
-    line-height: 25px;
-    margin: 15px 0;
-}
-
-/* Prenview */
-.preview {
-    margin: 5% 0;
-    padding: 1% 5%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
 }
-.preview .subdiv {
+section .img {
+    width: 100%;
+    background-color: #CBE4E8;
+    height: 650px;
+}
+section .form {
+    padding: 5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    margin: 15px 0;
-    padding: 10px;
-    height: 230px;
-    box-shadow: 0 0 5px grey;
 }
-.preview .subdiv:hover {
-    background-color: grey;
-    color: #fff;
-    transition: .5s ease-in-out;
+section .form h4 {
+    margin: 10px 0;
+    font-size: 28px;
+    text-transform: capitalize;
 }
-.preview .subdiv:hover i{
-    border-color: #c5c5c5;
-    background-color: #fff;
-    color: #000;
-    transition: .5s ease-in-out;
-}
-.preview .subdiv i {
-    background-color: black;
-    border: 10px solid grey;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
-    width: 25px;
-    padding: 10px;
-    color: #fff;
-    font-size: 20px
-}
-.preview .subdiv h4 {
-    font-size: 30px;
-}
-.preview .subdiv span {
+section .form h5 {
+    margin: 10px 0;
     font-size: 14px;
 }
-
-/* Founders */
-.founders {
-    padding: 1% 5%;
-    text-transform: capitalize;
+section .form a {
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+section .form div {
+    margin: 20px 0;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
-.founders .subdiv {
-    width: 70%;
+section .form div a:nth-child(1) {
+    width: 50%;
+    border: none;
+    padding: 0;
 }
-.founders .subdiv .img {
+section .form div button {
     width: 100%;
 }
-.founders .subdiv .img img {
+section .form a:nth-child(2) {
+    color: crimson;
+    border: none;
+}
+section .form a:nth-child(2):hover {
+    text-decoration: underline;
+}
+section .form p {
+    margin: auto;
+    padding: 10px 0;
+}
+section .form form input {
+    height: 25px;
     width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 20px 0;
+    padding: 5px;
 }
-.founders .subdiv .txt {
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
-}
-.founders .subdiv .txt div {
-    margin: 10px 0;
-    display: flex;
-    gap: 10px;
-}
-.founders .subdiv .txt h5 {
-    font-size: 25px;
-    line-height: 40px;
-}
-
-/* Services */
-.services {
-    padding: 15% 6%;
-}
-.services .subdivs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    text-transform: capitalize;
-}
-.services .subdivs .item {
-    width: 100%;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.services .subdivs .item div {
-    background-color: black;
-    color: white;
-    border: 10px solid rgb(165, 165, 165);
-    border-radius: 100%;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-}
-
 /* Footer */
 footer {
     background-color: black;
@@ -371,12 +302,6 @@ footer {
         display: flex;
         justify-content: center;
     }
-    .nav button {
-        display: none;
-    }
-    .navicons button {
-        display: none;
-    }
     .navbar .nav ul {
         margin: 0;
         padding: 0;
@@ -405,6 +330,9 @@ footer {
         background: none;
         cursor: pointer;
     }
+    .navbar .nav ul .category {
+        display: none;
+    }
     .navbar .nav input{
         display: none;
     }
@@ -423,52 +351,26 @@ footer {
         background-color: rgb(216, 215, 215);
         padding: 5px;
     }
-    .text {
-        padding: 1% 5%;
-        flex-direction: row;
-        flex-wrap: nowrap;
+    .nav button {
+        display: none;
+    }
+    .navicons button {
+        display: none;
+    }
+    /* Section */
+    section {
+        padding: 3% 0%;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .text .txt {
-        width: 40%;
-        padding: 20px;
-        font-size: larger;
+    section .img {
+        width: 50%;
     }
-    .text div:last-child {
-        width: 55%;
-    }
-    /* Preview */
-    .preview {
-        flex-wrap: nowrap;
-    }
-    .preview .subdiv {
-        width: 20%;
-    }
-    /* Founders */
-    .founders {
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .founders .subdiv {
+    section .form {
         width: 30%;
-    }
-    
-    /* Services */
-    .services {
-        padding: 0 10%;
-    }
-    .services .subdivs {
-        width: 100%;
-        flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
     }
-    .services .subdivs .item {
-        width: max-content;
-        padding: 5% 0;
-    }
-
      /* footer */
      .footer {
         flex-wrap: nowrap;

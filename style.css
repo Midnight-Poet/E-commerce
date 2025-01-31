@@ -215,17 +215,18 @@ a {
     backdrop-filter: blur(33px);
     border-radius: 5px;
 }
-.navbar .navicons .user-dropdown ul li {
+.navbar .navicons .user-dropdown ul a {
+    
     list-style-type: none;
     font-size: 15px;
     padding: 15px 25px;
-    /* margin: 8px 0; */
+    margin: 0;
     text-transform: capitalize;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.navbar .navicons .user-dropdown ul li:hover {
+.navbar .navicons .user-dropdown ul a:hover {
     cursor: pointer;
     background-color: #ffffff5e;
 }
@@ -262,6 +263,7 @@ a {
 }
 .imgs img {
     width: 100%;
+
 }
 
 /* Side Section */
@@ -642,7 +644,7 @@ button:hover {
 
 }
 .collection div:nth-child(1) {
-    background-image: url(./resources/img1.png);
+    background-image: url(../resources/img1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -650,7 +652,7 @@ button:hover {
     grid-column: span 5 ;
 }
 .collection div:nth-child(2) {
-    background-image: url(./resources/img2.png);
+    background-image: url(../resources/img2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -662,13 +664,13 @@ button:hover {
     grid-column: span 2;
 }
 .collection div:nth-child(3) {
-    background-image: url(./resources/img3.png);
+    background-image: url(../resources/img3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 } 
 .collection div:nth-child(4) {
-    background-image: url(./resources/img4.png);
+    background-image: url(../resources/img4.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -852,6 +854,11 @@ footer {
     .navicons button {
         display: none;
     }
+    .navbar .navicons .user-dropdown {
+        width: 15%;
+        top: 18%;
+        /* display: block; */
+    }
     .first {
         display: flex;
         justify-content: space-between;
@@ -886,7 +893,7 @@ footer {
         cursor: pointer;
     }
     .imgs {
-        padding: 2% 6%;
+        padding: 1% 7%;
     }
     .imgs img {
         width: 100%;

@@ -206,12 +206,12 @@ a {
 .navbar .navicons .user-dropdown {
     text-transform: capitalize;
     width: 30%;
-    right: 5%;
-    top: 14.5%;
+    right: 7%;
+    top: 27%;
     position: absolute;
     display: none;
     z-index: 5;
-    background-color: #ffffff93;
+    background-color: #ffffff85;
     backdrop-filter: blur(33px);
     border-radius: 5px;
 }
@@ -219,7 +219,7 @@ a {
     
     list-style-type: none;
     font-size: 15px;
-    padding: 15px 25px;
+    padding: 15px;
     margin: 0;
     text-transform: capitalize;
     display: flex;
@@ -228,7 +228,7 @@ a {
 }
 .navbar .navicons .user-dropdown ul a:hover {
     cursor: pointer;
-    background-color: #ffffff5e;
+    background-color: #d8d8d83e;
 }
 
 .navbar .navicons .icons div:hover .user-dropdown {

@@ -115,34 +115,63 @@ button:hover {
     cursor: pointer;
 }
 .navbar .navicons {
+    font-size: 18px;
     color: #000;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }
 .navbar .navicons a {
     margin: 0 4px;
     color: #000;
+    font-size: 16px;
 }
-.navbar .navicons div {
+.navbar .navicons .icons {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 .navbar .navicons input{
     display: none;
 }
-.navbar input{
-    align-self: center;
+.navbar .navicons .icons div {
+    margin: 0 5px;
+}
+.navbar .navicons .user {
+    cursor: pointer;
+}
+.navbar .navicons .user-dropdown {
+    text-transform: capitalize;
+    width: 30%;
+    right: 7%;
+    top: 27%;
+    position: absolute;
+    display: none;
+    z-index: 5;
+    background-color: #ffffff85;
+    backdrop-filter: blur(33px);
+    border-radius: 5px;
+}
+.navbar .navicons .user-dropdown ul a {
+    
+    list-style-type: none;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .navicons .user-dropdown ul a:hover {
+    cursor: pointer;
+    background-color: #d8d8d881;
+}
+
+.navbar .navicons .icons div:hover .user-dropdown {
     display: block;
-    width: 90%;
-    margin-top: 20px;
-    height: 30px;
-    border-radius: 0;
-    border: none;
-    background-color: rgb(216, 215, 215);
-    border: 1px solid rgb(114, 114, 114);
-    padding: 5px;
 }
 .navbar .navicons button {
     padding: 0;

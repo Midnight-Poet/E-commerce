@@ -856,7 +856,8 @@ footer {
     }
     .navbar .navicons .user-dropdown {
         width: 15%;
-        top: 18%;
+        top: 33%;
+        right: 5%;
         /* display: block; */
     }
     .first {
